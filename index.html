@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Grace Medical Practice · Windhoek</title>
 <meta name="description" content="Grace Medical Practice is a general medical practice led by Dr. Admire Nyamutamba, at the United Building on Independence Avenue, Windhoek. Call 061 221 962.">
-<meta name="theme-color" content="#EDEFE9">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%23EDEFE9'/><circle cx='16' cy='16' r='9' fill='none' stroke='%239C4A2F' stroke-width='2.4'/></svg>">
+<meta name="theme-color" content="#F6F9FC">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%23F6F9FC'/><circle cx='16' cy='16' r='9' fill='none' stroke='%231C5D99' stroke-width='2.4'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,100;1,9..144,300..600,100&display=swap">
@@ -15,19 +15,20 @@
 <link rel="stylesheet" href="scrollcraft.css">
 <style>
   :root {
-    --sc-canvas:     #EDEFE9;
-    --sc-surface:    #E2E7DF;
-    --sc-ink:        #1E2A25;
-    --sc-ink-soft:   #4D5B54;
-    --sc-accent:     #9C4A2F;
-    --sc-accent-ink: #FFF7F1;
+    --sc-canvas:     #F6F9FC;
+    --sc-surface:    #E8F0F7;
+    --sc-ink:        #0F2438;
+    --sc-ink-soft:   #3F566C;
+    --sc-accent:     #1C5D99;
+    --sc-accent-ink: #FFFFFF;
     --sc-font-display: "Fraunces", Georgia, serif;
     --sc-font-text:    "Figtree", system-ui, sans-serif;
     --sc-font-mono:    "Figtree", system-ui, sans-serif;
-    --sc-shadow-color: 150 18% 22%;
-    --paper: #F7F5F0;
-    --sage:  #C9D5CB;
-    --blush: #F2D9C9;
+    --sc-shadow-color: 210 40% 20%;
+    --paper: #FFFFFF;
+    --sage:  #D6E4F0;
+    --blush: #BFD6EA;
+    --accent-deep: #164B7D;
   }
   .sc-display { font-weight: 360; font-variation-settings: "SOFT" 100, "opsz" 120; }
   .sc-display em { font-style: italic; font-weight: 320; }
@@ -43,14 +44,14 @@
     text-decoration: none;
     transition: background-color var(--sc-d-base) var(--sc-ease-out), transform var(--sc-d-base) var(--sc-ease-out), box-shadow var(--sc-d-base) var(--sc-ease-out);
   }
-  .btn--solid { background: var(--sc-accent); color: var(--sc-accent-ink); box-shadow: 0 6px 18px -8px hsl(14 50% 25% / .55); }
-  .btn--solid:hover { background: #873E26; transform: translateY(-1px); }
+  .btn--solid { background: var(--sc-accent); color: var(--sc-accent-ink); box-shadow: 0 6px 18px -8px hsl(210 60% 25% / .5); }
+  .btn--solid:hover { background: var(--accent-deep); transform: translateY(-1px); }
   .btn--quiet { background: color-mix(in oklab, var(--paper) 78%, transparent); color: var(--sc-ink); box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--sc-ink) 18%, transparent); backdrop-filter: blur(6px); }
   .btn--quiet:hover { background: var(--paper); }
   .btn svg { width: 1.1em; height: 1.1em; flex: none; }
 
   /* --------------------------------------------------------------- hero -- */
-  .hero .sc-stage { background: #EDE9E3; }
+  .hero .sc-stage { background: #E9F0F6; }
   .hero__plane { position: absolute; pointer-events: none; }
   .hero__far {
     inset: -7% -2% -7% -2%;
@@ -62,8 +63,8 @@
   .hero__mist {
     left: -10%; right: -10%; bottom: 8%; height: 46%;
     background:
-      radial-gradient(60% 55% at 30% 70%, rgb(247 241 234 / .75), transparent 70%),
-      radial-gradient(55% 50% at 78% 75%, rgb(240 234 228 / .65), transparent 72%);
+      radial-gradient(60% 55% at 30% 70%, rgb(244 248 252 / .75), transparent 70%),
+      radial-gradient(55% 50% at 78% 75%, rgb(238 244 250 / .65), transparent 72%);
     filter: blur(14px);
     opacity: calc(0.85 - 0.5 * var(--sc-p, 0));
   }
@@ -71,7 +72,7 @@
     right: max(3vw, calc(50vw - 46rem));
     bottom: -26vh;
     height: 112vh; width: auto; max-width: none;
-    filter: drop-shadow(-18px 24px 30px rgb(60 70 60 / .16));
+    filter: drop-shadow(-18px 24px 30px rgb(30 60 90 / .16));
     z-index: 6;
   }
   .hero__veil {
@@ -80,7 +81,7 @@
   }
   .hero__sheer {
     top: -10%; bottom: -10%; left: -6vw; width: 26vw; z-index: 7;
-    background: linear-gradient(90deg, rgb(250 247 242 / .55), rgb(250 247 242 / .12) 60%, transparent);
+    background: linear-gradient(90deg, rgb(250 252 254 / .55), rgb(250 252 254 / .12) 60%, transparent);
     filter: blur(6px);
   }
   .mark {
@@ -97,7 +98,7 @@
     max-width: min(46rem, 58vw);
   }
   .hero__copy h1 { font-size: clamp(3rem, 1.7rem + 4.6vw, 6.4rem); line-height: 0.98; letter-spacing: -0.03em; }
-  .hero__copy p { margin-top: var(--sc-5); max-width: 34ch; font-size: var(--sc-t-lg); line-height: 1.5; color: #34423B; }
+  .hero__copy p { margin-top: var(--sc-5); max-width: 34ch; font-size: var(--sc-t-lg); line-height: 1.5; color: #2E4459; }
   .hero__actions { display: flex; flex-wrap: wrap; gap: var(--sc-3); margin-top: var(--sc-6); }
 
   /* ------------------------------------------------------------ welcome -- */
@@ -112,49 +113,6 @@
   .facts a { text-decoration: none; border-bottom: 1px solid color-mix(in oklab, var(--sc-accent) 45%, transparent); }
   .facts a:hover { border-bottom-color: var(--sc-accent); }
 
-  /* ------------------------------------------- breath: the signature move --
-     The ring is driven by the act's own --sc-p. Inhale over 0.06 to 0.38,
-     hold to 0.56, exhale to 0.86. Pure CSS off the engine's progress value. */
-  .breath .sc-stage { display: grid; place-items: center; }
-  .breath__stage {
-    --in:  clamp(0, calc((var(--sc-p, 0) - 0.06) / 0.32), 1);
-    --out: clamp(0, calc((var(--sc-p, 0) - 0.56) / 0.30), 1);
-    --b:   calc(var(--in) - var(--out));
-    position: relative; width: 100%; height: 100%;
-    display: grid; place-items: center;
-  }
-  .breath__field {
-    position: absolute; inset: 0; pointer-events: none;
-    background: radial-gradient(closest-side at 50% 52%, rgb(242 217 201 / calc(0.25 + 0.45 * var(--b))), transparent 100%);
-  }
-  .ring {
-    --size: min(64vmin, 34rem);
-    position: relative; width: var(--size); aspect-ratio: 1;
-    transform: scale(calc(0.56 + 0.44 * var(--b)));
-    will-change: transform;
-  }
-  .ring__body {
-    position: absolute; inset: 0; border-radius: 50%;
-    background:
-      radial-gradient(circle at 36% 30%, #FBF7F2 0%, #F3E2D6 38%, #DCE5DD 78%, #C9D5CB 100%);
-    box-shadow:
-      0 30px 60px -30px hsl(150 20% 25% / .35),
-      inset 0 -18px 40px -10px hsl(150 20% 40% / .18),
-      inset 0 10px 30px -8px rgb(255 255 255 / .8);
-  }
-  .ring__halo { position: absolute; inset: -9%; border-radius: 50%; border: 1px solid color-mix(in oklab, var(--sc-accent) 30%, transparent); opacity: calc(0.25 + 0.75 * var(--b)); transform: scale(calc(0.94 + 0.08 * var(--b))); }
-  .ring__halo + .ring__halo { inset: -20%; opacity: calc(0.12 + 0.5 * var(--b)); transform: scale(calc(0.9 + 0.12 * var(--b))); }
-  .breath__words { position: absolute; inset: 0; display: grid; place-items: center; z-index: 2; }
-  .breath__words > * { grid-area: 1 / 1; margin: 0; text-align: center; }
-  .breath__word { font-size: clamp(2.4rem, 1.6rem + 3.2vw, 4.6rem); font-style: italic; font-weight: 330; }
-  .breath__over, .breath__after {
-    position: absolute; left: 0; right: 0; text-align: center; margin: 0;
-    padding-inline: var(--sc-gutter); z-index: 3;
-  }
-  .breath__over { top: clamp(2.5rem, 9vh, 6rem); }
-  .breath__after { bottom: clamp(2.5rem, 10vh, 6.5rem); }
-  .breath__after .sc-lede { margin-inline: auto; max-width: 30ch; }
-
   /* --------------------------------------------------------------- care -- */
   .care .sc-stage { display: flex; align-items: center; }
   .rail { display: flex; gap: clamp(1rem, 2vw, 1.75rem); padding-inline: var(--sc-gutter); align-items: stretch; will-change: transform; }
@@ -166,9 +124,9 @@
     display: flex; flex-direction: column; justify-content: space-between;
     padding: clamp(1.4rem, 2.4vw, 2rem); border-radius: 24px;
     background: var(--paper);
-    box-shadow: 0 1px 0 rgb(255 255 255 / .9) inset, 0 22px 40px -28px hsl(150 20% 20% / .4);
+    box-shadow: 0 1px 0 rgb(255 255 255 / .9) inset, 0 22px 40px -28px hsl(210 35% 20% / .35);
   }
-  .card:nth-child(odd) { background: #F4ECE5; }
+  .card:nth-child(odd) { background: #EEF4FA; }
   .card h3 { font-family: var(--sc-font-display); font-weight: 400; font-size: var(--sc-t-xl); letter-spacing: -0.015em; line-height: 1.08; margin: 0; font-variation-settings: "SOFT" 100, "opsz" 60; }
   .card p { margin: var(--sc-3) 0 0; color: var(--sc-ink-soft); font-size: var(--sc-t-sm); line-height: 1.6; }
   .glyph { width: 56px; height: 56px; border-radius: 50%; position: relative; background: var(--sage); }
@@ -181,12 +139,51 @@
   .glyph--c::before { width: 28px; height: 28px; left: -6px; top: 14px; background: var(--sage); mix-blend-mode: multiply; }
   .glyph--d { background: transparent; }
   .glyph--d::before { width: 34px; height: 34px; left: 0; top: 11px; background: var(--sage); }
-  .glyph--d::after { width: 26px; height: 26px; right: 2px; top: 4px; background: var(--blush); box-shadow: 4px 30px 0 -6px #E8D2B8; }
+  .glyph--d::after { width: 26px; height: 26px; right: 2px; top: 4px; background: var(--blush); box-shadow: 4px 30px 0 -6px #A9C6E0; }
   .rail__note { flex: 0 0 clamp(16rem, 24vw, 22rem); align-self: center; padding-left: 1vw; }
   .rail__note p { margin: 0 0 var(--sc-5); }
   @media (prefers-reduced-motion: no-preference) {
     .care .card { opacity: clamp(0.55, calc(var(--sc-p, 0) * 6 - var(--i) * 0.9 + 1.4), 1); }
   }
+
+  /* --------------------------------------------------------------- book -- */
+  .book__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .book__intro h2 { max-width: 10ch; }
+  .book__intro a { text-decoration: none; border-bottom: 1px solid color-mix(in oklab, var(--sc-accent) 45%, transparent); color: var(--sc-ink); font-weight: 500; }
+  .book__urgent { margin-top: var(--sc-6); padding: var(--sc-4) var(--sc-5); border-radius: 14px; background: var(--paper); box-shadow: inset 3px 0 0 var(--sc-accent); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); max-width: 40ch; }
+  .book__urgent strong { color: var(--sc-ink); font-weight: 600; }
+  .book__form {
+    background: var(--paper); border-radius: 26px; padding: clamp(1.4rem, 3.5vw, 2.75rem);
+    box-shadow: 0 1px 0 #fff inset, 0 40px 70px -44px hsl(210 35% 20% / .4), 0 6px 14px -8px hsl(210 35% 20% / .14);
+    display: grid; gap: var(--sc-5);
+  }
+  .field { display: grid; gap: 0.45rem; margin: 0; padding: 0; border: 0; min-width: 0; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sc-5); align-items: start; }
+  .field label, .field legend { font-size: var(--sc-t-sm); font-weight: 600; color: var(--sc-ink); padding: 0; }
+  .field legend { margin-bottom: 0.45rem; }
+  .opt { font-weight: 400; color: var(--sc-ink-soft); }
+  .field input[type="text"], .field input[type="tel"], .field input[type="email"], .field input[type="date"], .field textarea {
+    width: 100%; min-height: 48px; padding: 0.7rem 0.95rem; border-radius: 12px;
+    border: 1px solid #C3D3E2; background: #FAFCFE; color: var(--sc-ink);
+    transition: border-color var(--sc-d-fast) var(--sc-ease-out), box-shadow var(--sc-d-fast) var(--sc-ease-out);
+  }
+  .field textarea { resize: vertical; min-height: 6rem; line-height: 1.5; }
+  .field :is(input, textarea):focus-visible { outline: none; border-color: var(--sc-accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--sc-accent) 25%, transparent); }
+  .field [aria-invalid="true"] { border-color: #B3261E; }
+  .err { color: #B3261E; font-size: var(--sc-t-xs); margin: 0; }
+  .hint { margin: 0; font-size: var(--sc-t-xs); color: var(--sc-ink-soft); }
+  .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .pills label { position: relative; cursor: pointer; font-weight: 500; }
+  .pills input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .pills span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1rem; border-radius: var(--sc-r-pill); border: 1px solid #C3D3E2; background: #FAFCFE; transition: background-color var(--sc-d-fast) var(--sc-ease-out), border-color var(--sc-d-fast) var(--sc-ease-out), color var(--sc-d-fast) var(--sc-ease-out); }
+  .pills input:checked + span { background: var(--sc-accent); border-color: var(--sc-accent); color: var(--sc-accent-ink); }
+  .pills input:focus-visible + span { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
+  .book__submit { justify-self: start; border: 0; cursor: pointer; font-size: var(--sc-t-base); padding-inline: 1.8rem; }
+  .book__status { padding: var(--sc-4) var(--sc-5); border-radius: 14px; background: var(--sc-surface); font-size: var(--sc-t-sm); }
+  .book__status p { margin: 0 0 0.5rem; }
+  .book__status p:last-child { margin-bottom: 0; }
+  .book__status a { color: var(--sc-ink); font-weight: 500; }
+  .linkish { background: none; border: 0; padding: 0; color: var(--sc-accent); font-weight: 600; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer; }
 
   /* -------------------------------------------------------------- find us -- */
   .find { padding-block: clamp(3rem, 7vw, 7rem); }
@@ -197,10 +194,10 @@
     box-shadow: var(--sc-e3);
   }
   .plate__text { padding: clamp(1.75rem, 4.5vw, 4.5rem); display: flex; flex-direction: column; justify-content: space-between; gap: var(--sc-7); }
-  .plate__text .sc-label { color: #F2D9C9; }
+  .plate__text .sc-label { color: #CFE2F3; }
   .plate h2 { font-size: clamp(2.6rem, 1.6rem + 4vw, 5.6rem); line-height: 0.96; letter-spacing: -0.03em; margin-top: var(--sc-4); }
   .plate address { font-style: normal; font-size: var(--sc-t-lg); line-height: 1.5; max-width: 26ch; }
-  .plate .btn--quiet { background: #FFF7F1; color: #5A2918; box-shadow: none; }
+  .plate .btn--quiet { background: #FFFFFF; color: #123E66; box-shadow: none; }
   .plate__img { position: relative; min-height: 18rem; }
   .plate__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 32% 88%; }
 
@@ -212,13 +209,13 @@
     position: relative; max-width: 46rem; margin-inline: auto;
     background: var(--paper); border-radius: 26px;
     padding: clamp(1.6rem, 4vw, 3rem);
-    box-shadow: 0 1px 0 #fff inset, 0 40px 70px -40px hsl(150 20% 20% / .45), 0 6px 14px -8px hsl(150 20% 20% / .2);
+    box-shadow: 0 1px 0 #fff inset, 0 40px 70px -40px hsl(210 35% 20% / .4), 0 6px 14px -8px hsl(210 35% 20% / .18);
     display: grid; grid-template-columns: 1fr auto; gap: var(--sc-6) var(--sc-6);
   }
   .appt::before {
     content: ""; position: absolute; left: 0; right: 0; top: 0; height: 8px;
     border-radius: 26px 26px 0 0;
-    background: linear-gradient(90deg, var(--sage), var(--blush) 55%, #E6C3AE);
+    background: linear-gradient(90deg, var(--sage), var(--blush) 55%, #7FA9D1);
   }
   .appt__who h3 { font-family: var(--sc-font-display); font-weight: 420; font-size: var(--sc-t-xl); line-height: 1.1; margin: 0; letter-spacing: -0.015em; font-variation-settings: "SOFT" 100, "opsz" 60; }
   .appt__who p { margin: 0.35rem 0 0; color: var(--sc-ink-soft); font-size: var(--sc-t-sm); }
@@ -246,14 +243,14 @@
     padding: 0.35rem; border-radius: var(--sc-r-pill);
     background: color-mix(in oklab, var(--paper) 88%, transparent);
     backdrop-filter: blur(12px) saturate(1.1);
-    box-shadow: 0 14px 30px -16px hsl(150 20% 15% / .5), inset 0 0 0 1px rgb(255 255 255 / .6);
+    box-shadow: 0 14px 30px -16px hsl(210 35% 15% / .45), inset 0 0 0 1px rgb(255 255 255 / .6);
     transition: opacity var(--sc-d-slow) var(--sc-ease-out), transform var(--sc-d-slow) var(--sc-ease-out);
   }
   .chip.is-away { opacity: 0; transform: translateY(14px); pointer-events: none; }
   .chip a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; padding: 0 0.95rem; border-radius: var(--sc-r-pill); font-size: var(--sc-t-sm); font-weight: 500; }
   .chip a:hover { background: color-mix(in oklab, var(--sc-ink) 7%, transparent); }
   .chip .chip__call { background: var(--sc-accent); color: var(--sc-accent-ink); font-weight: 600; gap: 0.5rem; }
-  .chip .chip__call:hover { background: #873E26; }
+  .chip .chip__call:hover { background: var(--accent-deep); }
   .chip svg { width: 1em; height: 1em; }
 
   /* ------------------------------------------------------------- mobile -- */
@@ -273,6 +270,10 @@
     .chip { left: 1rem; right: 1rem; }
     .chip .chip__find { display: none; }
     .chip .chip__call { flex: 1; justify-content: center; }
+    .chip .chip__book { padding-inline: 1.2rem; font-weight: 600; }
+    .book__grid { grid-template-columns: 1fr; }
+    .field-row { grid-template-columns: 1fr; }
+    .book__submit { justify-self: stretch; justify-content: center; }
     .rail__lead { flex-basis: 78vw; }
     .card { flex-basis: 74vw; min-height: 22rem; }
     .rail__note { flex-basis: 74vw; }
@@ -283,18 +284,10 @@
 
   /* ---------------------------------------------------- reduced motion -- */
   @media (prefers-reduced-motion: reduce) {
-    .hero, .breath { height: auto !important; }
+    .hero { height: auto !important; }
     .hero .sc-stage { position: relative; }
     .hero__push { transform: none; }
     .hero [data-sc-cue] { opacity: 1 !important; transform: none !important; }
-    .breath .sc-stage { position: relative; height: auto; padding-block: var(--sc-section); }
-    .breath__stage { --b: 1; height: auto; display: flex; flex-direction: column; gap: var(--sc-6); }
-    .breath__over, .breath__after { position: static; }
-    .breath__words { position: static; display: flex; gap: 0.5em; flex-wrap: wrap; justify-content: center; }
-    .breath__words > *, .breath [data-sc-cue] { opacity: 1 !important; transform: none !important; }
-    .ring { --size: min(40vmin, 16rem); transform: none; }
-    .breath__words { order: 3; }
-    .breath__after { order: 4; }
   }
 </style>
 </head>
@@ -307,7 +300,7 @@
 
 <nav class="chip" aria-label="Contact the practice">
   <a class="chip__find" href="#find">Find us</a>
-  <a class="chip__find" href="#care">Care</a>
+  <a class="chip__book" href="#book">Book</a>
   <a class="chip__call" href="tel:+26461221962">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
     Call 061 221 962
@@ -317,7 +310,7 @@
 <main id="top">
 
   <!-- 1 · ARRIVAL: layered parallax hero -->
-  <section class="hero" data-sc-act="pin" data-sc-span="1.8" data-sc-drift="#EDEFE9" aria-labelledby="h-hero">
+  <section class="hero" data-sc-act="pin" data-sc-span="1.8" data-sc-drift="#F6F9FC" aria-labelledby="h-hero">
     <div data-sc-stage>
       <div class="hero__push" aria-hidden="true">
         <img class="hero__plane hero__far" data-sc-parallax="-0.5" src="assets/hills-far.webp" width="2400" height="1350" alt="">
@@ -334,7 +327,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
             Call 061 221 962
           </a>
-          <a class="btn btn--quiet" href="#find">Find the practice</a>
+          <a class="btn btn--quiet" href="#book">Book an appointment</a>
         </div>
       </div>
 
@@ -345,7 +338,7 @@
   </section>
 
   <!-- 2 · WELCOME: flow -->
-  <section id="welcome" class="sc-section welcome" data-sc-act="flow" data-sc-drift="#F1EEE8" aria-labelledby="h-welcome">
+  <section id="welcome" class="sc-section welcome" data-sc-act="flow" data-sc-drift="#F1F5FA" aria-labelledby="h-welcome">
     <div class="sc-wrap welcome__grid">
       <figure class="welcome__photo" data-sc-in>
         <img src="assets/still.webp" width="1400" height="1867" loading="lazy"
@@ -364,30 +357,8 @@
     </div>
   </section>
 
-  <!-- 3 · BREATH: the peak. Pinned, largest span. -->
-  <section class="breath" data-sc-act="pin" data-sc-span="3.4" data-sc-drift="#E6ECE8" aria-labelledby="h-breath">
-    <div data-sc-stage>
-      <div class="breath__stage">
-        <div class="breath__field" aria-hidden="true"></div>
-        <p class="breath__over sc-label" id="h-breath" data-sc-cue="0 0.5 0 0.3">Before anything else</p>
-        <div class="ring" aria-hidden="true">
-          <span class="ring__halo"></span><span class="ring__halo"></span>
-          <span class="ring__body"></span>
-        </div>
-        <div class="breath__words">
-          <p class="breath__word sc-display" data-sc-cue="0 0.40 0 0.25">Breathe in.</p>
-          <p class="breath__word sc-display" data-sc-cue="0.34 0.60 0.25 0.25">Hold.</p>
-          <p class="breath__word sc-display" data-sc-cue="0.54 0.88 0.2 0.25">And out.</p>
-        </div>
-        <div class="breath__after" data-sc-cue="0.80 1 0.35 0.05">
-          <p class="sc-lede">That slow breath is where every good consultation begins.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · CARE: pan -->
-  <section id="care" class="care" data-sc-act="pan" data-sc-span="3.0" data-sc-drift="#EDEFE9" aria-labelledby="h-care">
+  <section id="care" class="care" data-sc-act="pan" data-sc-span="3.0" data-sc-drift="#F6F9FC" aria-labelledby="h-care">
     <div data-sc-stage>
       <div class="rail" data-sc-pan="0.04">
         <div class="rail__lead">
@@ -418,8 +389,65 @@
     </div>
   </section>
 
+  <!-- 4 · BOOK: request form. No backend: it hands a ready-written request
+       to the visitor's email app, and the practice confirms by phone. -->
+  <section id="book" class="sc-section book" data-sc-act="flow" data-sc-drift="#EAF1F8" aria-labelledby="h-book">
+    <div class="sc-wrap book__grid">
+      <div class="book__intro sc-stack" data-sc-in data-sc-stagger="70">
+        <h2 id="h-book" class="sc-display sc-display--lg">Book an appointment</h2>
+        <p class="sc-lede">Tell us when suits you, and we'll call to confirm your time.</p>
+        <p class="sc-body">Prefer to talk it through? Call <a href="tel:+26461221962">061 221 962</a> or <a href="tel:+264814445253">081 444 5253</a>.</p>
+        <p class="book__urgent"><strong>Feeling very unwell?</strong> Please call rather than book online. In an emergency, go to your nearest emergency unit.</p>
+      </div>
+      <form class="book__form" id="book-form" novalidate data-sc-in>
+        <div class="field">
+          <label for="b-name">Full name</label>
+          <input id="b-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="b-phone">Phone number</label>
+            <input id="b-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="081 000 0000">
+          </div>
+          <div class="field">
+            <label for="b-email">Email <span class="opt">(optional)</span></label>
+            <input id="b-email" name="email" type="email" autocomplete="email">
+          </div>
+        </div>
+        <fieldset class="field">
+          <legend>Have you visited us before?</legend>
+          <div class="pills">
+            <label><input type="radio" name="patient" value="New patient" checked><span>First visit</span></label>
+            <label><input type="radio" name="patient" value="Returning patient"><span>Returning</span></label>
+          </div>
+        </fieldset>
+        <div class="field-row">
+          <div class="field">
+            <label for="b-date">Preferred date</label>
+            <input id="b-date" name="date" type="date" required>
+          </div>
+          <fieldset class="field">
+            <legend>Time of day</legend>
+            <div class="pills">
+              <label><input type="radio" name="time" value="Morning" checked><span>Morning</span></label>
+              <label><input type="radio" name="time" value="Afternoon"><span>Afternoon</span></label>
+              <label><input type="radio" name="time" value="Any time"><span>Any</span></label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="field">
+          <label for="b-reason">Reason for visit <span class="opt">(optional)</span></label>
+          <textarea id="b-reason" name="reason" rows="3" maxlength="400" aria-describedby="b-reason-hint"></textarea>
+          <p class="hint" id="b-reason-hint">A few words is plenty. Please keep detailed medical information for the consultation.</p>
+        </div>
+        <button class="btn btn--solid book__submit" type="submit">Request appointment</button>
+        <div class="book__status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </section>
+
   <!-- 5 · FIND US: reveal -->
-  <section id="find" class="find" data-sc-act="flow" data-sc-drift="#E9E6DF" aria-labelledby="h-find">
+  <section id="find" class="find" data-sc-act="flow" data-sc-drift="#EEF3F8" aria-labelledby="h-find">
     <div class="sc-wrap">
       <div class="plate" data-sc-reveal="up" data-sc-reveal-at="0.05 0.42">
         <div class="plate__text">
@@ -440,7 +468,7 @@
   </section>
 
   <!-- 6 · TAKE HOME: the appointment card. Last element on the page. -->
-  <section id="contact" class="close" data-sc-act="flow" data-sc-drift="#EDEFE9" aria-labelledby="h-close">
+  <section id="contact" class="close" data-sc-act="flow" data-sc-drift="#F6F9FC" aria-labelledby="h-close">
     <div class="sc-wrap">
       <div class="close__lead sc-stack" data-sc-in data-sc-stagger="60">
         <h2 id="h-close" class="sc-display sc-display--lg">Breathe easy. We're close by.</h2>
@@ -462,8 +490,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
             Call 061 221 962
           </a>
+          <a class="btn btn--quiet" href="#book">Book an appointment</a>
           <a class="btn btn--quiet" href="grace-medical.vcf" download>Save to contacts</a>
-          <a class="btn btn--quiet" href="mailto:gracemedical@hotmail.com">Email us</a>
         </div>
       </article>
       <footer class="foot">
@@ -483,15 +511,110 @@
 <script>
   ScrollCraft.mount(document.body);
   document.getElementById('yr').textContent = new Date().getFullYear();
-  // The chip steps aside once the appointment card is on screen, so the page
-  // never shows the same number twice in one view.
+  // Booking: validate, then hand a ready-written request to the visitor's
+  // email app. There is no server, so nothing is stored on this site.
+  (function () {
+    var form = document.getElementById('book-form');
+    if (!form) return;
+    var TO = 'gracemedical@hotmail.com';
+    var date = form.elements.date;
+    var today = new Date();
+    var iso = function (d) { return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); };
+    date.min = iso(today);
+    var status = form.querySelector('.book__status');
+    var msgs = {
+      name: 'Please tell us your name.',
+      phone: 'Please add a phone number so we can confirm your time.',
+      email: 'That email address doesn\'t look quite right.',
+      date: 'Please choose a date from today onwards.'
+    };
+    function setErr(el, text) {
+      var id = el.id + '-err', old = document.getElementById(id);
+      if (old) old.remove();
+      el.removeAttribute('aria-invalid');
+      var desc = (el.getAttribute('aria-describedby') || '').split(' ').filter(function (x) { return x && x !== id; });
+      if (text) {
+        var p = document.createElement('p');
+        p.className = 'err'; p.id = id; p.textContent = text;
+        el.insertAdjacentElement('afterend', p);
+        el.setAttribute('aria-invalid', 'true');
+        desc.push(id);
+      }
+      if (desc.length) el.setAttribute('aria-describedby', desc.join(' ')); else el.removeAttribute('aria-describedby');
+    }
+    function check() {
+      var first = null;
+      ['name', 'phone', 'email', 'date'].forEach(function (n) {
+        var el = form.elements[n], v = el.value.trim(), bad = false;
+        if (n === 'phone') bad = v.replace(/[^\d]/g, '').length < 7;
+        else if (n === 'email') bad = v !== '' && !el.checkValidity();
+        else if (n === 'date') bad = !v || v < date.min;
+        else bad = v === '';
+        setErr(el, bad ? msgs[n] : '');
+        if (bad && !first) first = el;
+      });
+      return first;
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var bad = check();
+      if (bad) { bad.focus(); return; }
+      var f = form.elements;
+      var when = new Date(f.date.value + 'T00:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      var lines = [
+        'Hello Grace Medical Practice,',
+        '',
+        'I would like to request an appointment.',
+        '',
+        'Name: ' + f.name.value.trim(),
+        'Phone: ' + f.phone.value.trim(),
+        f.email.value.trim() ? 'Email: ' + f.email.value.trim() : null,
+        'Patient: ' + f.patient.value,
+        'Preferred date: ' + when,
+        'Time of day: ' + f.time.value,
+        f.reason.value.trim() ? 'Reason: ' + f.reason.value.trim() : null,
+        '',
+        'Please call me to confirm a time.',
+        '',
+        'Thank you.'
+      ].filter(function (l) { return l !== null; });
+      var body = lines.join('\n');
+      var subject = 'Appointment request: ' + f.name.value.trim() + ', ' + when;
+      window.location.href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      status.hidden = false;
+      status.innerHTML = '';
+      var p1 = document.createElement('p');
+      p1.innerHTML = '<strong>Almost done.</strong> Your email app should open with the request written. Press send, and the practice will call you to confirm.';
+      var p2 = document.createElement('p');
+      p2.innerHTML = 'Nothing opened? Email <a href="mailto:' + TO + '">' + TO + '</a>, call <a href="tel:+26461221962">061 221 962</a>, or ';
+      var copy = document.createElement('button');
+      copy.type = 'button'; copy.className = 'linkish'; copy.textContent = 'copy the request';
+      copy.addEventListener('click', function () {
+        (navigator.clipboard ? navigator.clipboard.writeText(body) : Promise.reject()).then(function () {
+          copy.textContent = 'copied';
+        }, function () { copy.textContent = 'copy failed, please call instead'; });
+      });
+      p2.appendChild(copy);
+      p2.appendChild(document.createTextNode('.'));
+      status.appendChild(p1); status.appendChild(p2);
+    });
+    form.addEventListener('input', function (e) {
+      if (e.target.getAttribute('aria-invalid') === 'true') check();
+    });
+  })();
+
+  // The chip steps aside while the booking form or the contact card is on
+  // screen, so it never covers a form field or repeats the card's buttons.
   (function () {
     var chip = document.querySelector('.chip');
-    var card = document.querySelector('.appt');
-    if (!('IntersectionObserver' in window) || !chip || !card) return;
-    new IntersectionObserver(function (e) {
-      chip.classList.toggle('is-away', e[0].isIntersecting);
-    }, { threshold: 0.15 }).observe(card);
+    var targets = [document.getElementById('book-form'), document.querySelector('.appt')];
+    if (!('IntersectionObserver' in window) || !chip) return;
+    var seen = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+      chip.classList.toggle('is-away', seen.size > 0);
+    }, { threshold: 0.15 });
+    targets.forEach(function (t) { if (t) io.observe(t); });
   })();
 </script>
 </body>

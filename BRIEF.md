@@ -69,3 +69,10 @@ before you even walk in.
 
 The breath act's "Hold" window is intentional stillness (the ring stays full,
 no copy change). It is not dead scroll.
+
+## Revision 1 (client feedback)
+
+- Palette changed to mainly blue and white. Landscape and aloe images regraded cool.
+- The breathing section ("Breathe in / Hold / And out") was removed at the client's request.
+- A booking section was added: a request form that opens the visitor's email app with a pre-written appointment request; the practice confirms by phone.
+- A photo of the doctor is wanted in the welcome section. Pending a real photo of Dr. Nyamutamba.
