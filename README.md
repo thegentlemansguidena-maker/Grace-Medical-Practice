@@ -21,7 +21,7 @@ To receive requests without the visitor's email app (for example through Formspr
 ## Confirm before launch
 
 - **Care list.** The four cards describe general GP work. Confirm the practice offers each of them.
-- **Doctor photo.** The welcome section still shows a stethoscope still-life. To use a photo of Dr. Nyamutamba, save it as `assets/doctor.webp` (portrait, about 1400 x 1870) and change the `src` and `alt` of the image in the welcome section.
+- **Doctor photo.** The welcome section uses the supplied photo of Dr. Nyamutamba (`assets/doctor.webp`, 422 x 528). A higher-resolution original would look sharper on large screens; replace the file at the same 4:5 shape.
 - **Other photos.** The landscape and aloe images are AI-generated and illustrative, not the real premises.
 - **Details not on the page.** Opening hours, medical aid, and qualifications were not supplied. Add them if the practice wants them shown.
 - **Booking email.** Make sure someone checks gracemedical@hotmail.com regularly, since booking requests arrive there.

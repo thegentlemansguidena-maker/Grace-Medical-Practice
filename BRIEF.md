@@ -75,4 +75,4 @@ no copy change). It is not dead scroll.
 - Palette changed to mainly blue and white. Landscape and aloe images regraded cool.
 - The breathing section ("Breathe in / Hold / And out") was removed at the client's request.
 - A booking section was added: a request form that opens the visitor's email app with a pre-written appointment request; the practice confirms by phone.
-- A photo of the doctor is wanted in the welcome section. Pending a real photo of Dr. Nyamutamba.
+- The welcome section now shows the supplied photo of Dr. Nyamutamba in place of the stethoscope still-life.

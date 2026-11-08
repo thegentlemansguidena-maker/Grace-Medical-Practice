@@ -104,8 +104,17 @@
   /* ------------------------------------------------------------ welcome -- */
   .welcome { padding-top: clamp(3rem, 6vw, 6rem); }
   .welcome__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 6vw, 7rem); align-items: center; }
-  .welcome__photo { margin: 0; border-radius: 22px; overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--sc-e2); background: var(--sc-surface); }
-  .welcome__photo img { width: 100%; height: 100%; object-fit: cover; }
+  .welcome__photo { margin: 0; position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5; box-shadow: var(--sc-e2); background: var(--sc-surface); max-width: 30rem; }
+  .welcome__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+  .welcome__photo figcaption {
+    position: absolute; left: var(--sc-4); bottom: var(--sc-4);
+    padding: 0.55rem 0.95rem; border-radius: 12px;
+    background: color-mix(in oklab, var(--paper) 90%, transparent); backdrop-filter: blur(8px);
+    font-size: var(--sc-t-sm); line-height: 1.35; color: var(--sc-ink);
+    box-shadow: 0 8px 20px -12px hsl(210 35% 20% / .4);
+  }
+  .welcome__photo figcaption strong { display: block; font-weight: 600; }
+  .welcome__photo figcaption span { color: var(--sc-ink-soft); }
   .welcome h2 { max-width: 14ch; }
   .facts { display: grid; grid-template-columns: auto 1fr; gap: 0.55rem 1.6rem; margin: var(--sc-7) 0 0; padding-top: var(--sc-5); border-top: 1px solid var(--sc-hairline-strong); font-size: var(--sc-t-sm); }
   .facts dt { color: var(--sc-ink-soft); font-weight: 500; }
@@ -262,7 +271,7 @@
     .hero__aloe { height: 62vh; right: -16vw; bottom: -12vh; }
     .hero__sheer { display: none; }
     .welcome__grid { grid-template-columns: 1fr; }
-    .welcome__photo { aspect-ratio: 4 / 3.4; }
+    .welcome__photo { aspect-ratio: 4 / 4.4; max-width: none; }
     .plate { grid-template-columns: 1fr; }
     .plate__img { min-height: 14rem; order: -1; }
     .appt { grid-template-columns: 1fr auto; }
@@ -341,8 +350,9 @@
   <section id="welcome" class="sc-section welcome" data-sc-act="flow" data-sc-drift="#F1F5FA" aria-labelledby="h-welcome">
     <div class="sc-wrap welcome__grid">
       <figure class="welcome__photo" data-sc-in>
-        <img src="assets/still.webp" width="1400" height="1867" loading="lazy"
-             alt="A stethoscope resting on a folded linen sheet at the end of an examination couch, beside a sprig of leaves in a glass of water, in soft morning light.">
+        <img src="assets/doctor.webp" width="422" height="528" loading="lazy"
+             alt="Dr. Admire Nyamutamba, smiling, with arms folded, against a plain wall.">
+        <figcaption><strong>Dr. Admire Nyamutamba</strong><span>General practitioner</span></figcaption>
       </figure>
       <div class="sc-stack" data-sc-in data-sc-stagger="70">
         <h2 id="h-welcome" class="sc-display sc-display--lg">A family doctor, close to town.</h2>
