@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;;;;
+FN:Grace Medical Practice
+ORG:Grace Medical Practice
+NOTE:General medical practice led by Dr. Admire Nyamutamba
+TEL;TYPE=WORK,VOICE:+264 61 221 962
+TEL;TYPE=CELL:+264 81 444 5253
+EMAIL;TYPE=INTERNET:gracemedical@hotmail.com
+ADR;TYPE=WORK:;Unit 3, United Building;Erf 250, Independence Avenue;Windhoek;;;Namibia
+END:VCARD
