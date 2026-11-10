@@ -6,7 +6,7 @@
 <title>Grace Medical Practice · Windhoek</title>
 <meta name="description" content="Grace Medical Practice is a general medical practice led by Dr. Admire Nyamutamba, at the United Building on Independence Avenue, Windhoek. Call 061 221 962.">
 <meta name="theme-color" content="#F6F9FC">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%23F6F9FC'/><circle cx='16' cy='16' r='9' fill='none' stroke='%231C5D99' stroke-width='2.4'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231C5D99'/><rect x='12.5' y='6' width='7' height='20' rx='2.2' fill='white'/><rect x='6' y='12.5' width='20' height='7' rx='2.2' fill='white'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,100;1,9..144,300..600,100&display=swap">
@@ -90,8 +90,8 @@
     font-family: var(--sc-font-display); font-size: 1.12rem; font-weight: 450; letter-spacing: -0.01em;
     font-variation-settings: "SOFT" 100, "opsz" 24;
   }
-  .mark__ring { width: 26px; height: 26px; border-radius: 50%; border: 2.2px solid var(--sc-accent); position: relative; }
-  .mark__ring::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--blush); }
+  .cross { display: block; flex: none; fill: var(--sc-accent); }
+  .mark .cross { width: 26px; height: 26px; }
   .hero__copy {
     position: absolute; z-index: 5;
     left: var(--sc-gutter); top: clamp(6.5rem, 17vh, 11rem);
@@ -228,8 +228,8 @@
   }
   .appt__who h3 { font-family: var(--sc-font-display); font-weight: 420; font-size: var(--sc-t-xl); line-height: 1.1; margin: 0; letter-spacing: -0.015em; font-variation-settings: "SOFT" 100, "opsz" 60; }
   .appt__who p { margin: 0.35rem 0 0; color: var(--sc-ink-soft); font-size: var(--sc-t-sm); }
-  .appt__ring { width: 64px; height: 64px; border-radius: 50%; border: 3px solid var(--sc-accent); position: relative; align-self: start; }
-  .appt__ring::after { content: ""; position: absolute; inset: 13px; border-radius: 50%; background: var(--blush); }
+  .appt__cross { width: 64px; height: 64px; border-radius: 18px; background: var(--sc-surface); display: grid; place-items: center; align-self: start; }
+  .appt__cross .cross { width: 34px; height: 34px; }
   .appt__lines { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sc-5); padding-top: var(--sc-5); border-top: 1px dashed color-mix(in oklab, var(--sc-ink) 26%, transparent); }
   .appt__lines .sc-label { display: block; margin-bottom: 0.35rem; }
   .appt__lines p { margin: 0; font-size: var(--sc-t-sm); line-height: 1.55; }
@@ -326,7 +326,7 @@
         <div class="hero__plane hero__mist" data-sc-parallax="-1.1"></div>
       </div>
 
-      <a class="mark" href="#top" aria-label="Grace Medical Practice, back to top"><span class="mark__ring" aria-hidden="true"></span>Grace Medical Practice</a>
+      <a class="mark" href="#top" aria-label="Grace Medical Practice, back to top"><svg class="cross" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.6" y="2" width="6.8" height="20" rx="2.2"/><rect x="2" y="8.6" width="20" height="6.8" rx="2.2"/></svg>Grace Medical Practice</a>
 
       <div class="hero__copy" data-sc-cue="0 0.86 0 0.4">
         <h1 id="h-hero" class="sc-display">Unhurried care in the heart of <em>Windhoek</em>.</h1>
@@ -489,7 +489,7 @@
           <h3>Grace Medical Practice</h3>
           <p>Dr. Admire Nyamutamba · General practice</p>
         </div>
-        <span class="appt__ring" aria-hidden="true"></span>
+        <span class="appt__cross" aria-hidden="true"><svg class="cross" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.6" y="2" width="6.8" height="20" rx="2.2"/><rect x="2" y="8.6" width="20" height="6.8" rx="2.2"/></svg></span>
         <div class="appt__lines">
           <div><span class="sc-label">Call</span><p><a href="tel:+26461221962">061 221 962</a><br><a href="tel:+264814445253">081 444 5253</a></p></div>
           <div><span class="sc-label">Write</span><p><a href="mailto:gracemedical@hotmail.com">gracemedical@hotmail.com</a></p></div>
